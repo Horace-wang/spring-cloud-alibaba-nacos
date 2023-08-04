@@ -1,0 +1,8 @@
+server:
+  port: 4433
+spring:
+  cloud:
+    nacos:
+      server-addr: 81.69.229.201:8848
+  application:
+    name: nacos-consumer

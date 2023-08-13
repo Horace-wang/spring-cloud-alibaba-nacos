@@ -1,13 +1,13 @@
 package org.horace.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import org.horace.api.HealthService;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HealthController {
+public class HealthController implements HealthService {
 
 
-    @GetMapping("/health")
+    @Override
     public String health(String name) {
         return "hello " + name + ", i am health";
     }
